@@ -6,53 +6,119 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #272424; 
+    color: #fff;
+    display: flex;
+    height: 100vh;
 }
 
-header {
-    background-color: #0077cc;
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Menu lateral */
+.sidebar {
+    background-color: #26828f; 
+    width: 200px;
+    padding-top: 20px;
+    position: fixed;
+    height: 100vh;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
     color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 1.5rem; 
+}
+
+.sidebar ul li a:hover {
+    background-color: #b79999;
+}
+
+/* Conteúdo principal */
+.content {
+    margin-left: 200px; 
     padding: 20px;
+    flex-grow: 1;
+    text-align: center; 
+    font-size: 1.5rem; 
+}
+
+/* Centralizar o conteúdo */
+.conteudo {
+    display: none; 
     text-align: center;
 }
 
-h1 {
-    font-size: 2.5rem;
+.conteudo.active {
+    display: block; 
 }
 
-section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+h1 {
+    color: #ffffff;
+    font-size: 2.5rem; 
+    margin-bottom: 30px; 
 }
 
 h2 {
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-    color: #0077cc;
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 20px; 
 }
 
 p {
-    margin-bottom: 15px;
+    margin-bottom: 30px; 
+    font-size: 1.5rem; 
 }
 
+.espaco {
+    margin-top: 20px; 
+}
+
+.grande {
+    margin-top: 40px; 
+}
+
+/* Alinhamento do texto na página inicial */
+.inicio-texto {
+    text-align: center; 
+}
+
+/* Formação e Cursos */
 .formacao-item, .curso-item {
     display: flex;
+    flex-direction: column; 
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: center; 
 }
 
 .formacao-item img, .curso-item img {
     width: 100px;
-    margin-right: 20px;
+    margin-bottom: 10px; 
+}
+
+
+.foto-perfil {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px 0; 
 }
 
 a {
-    color: #0077cc;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -60,6 +126,8 @@ a:hover {
     text-decoration: underline;
 }
 
-#contatos p {
-    margin: 10px 0;
+#contato p {
+    margin: 20px 0;
+    font-size: 1.5rem; 
 }
+
